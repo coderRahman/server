@@ -4,7 +4,8 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js",
+    "test": "c8 mocha -p -j 2 --exit test/*.test.js"
   },
   "dependencies": {
     "cors": "^2.8.5",
